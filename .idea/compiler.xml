@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Databases" />
+        <module name="MQ" />
+        <module name="ThreadDemo" />
+        <module name="Design_Pattern" />
+        <module name="BigData_Hadoop" />
+        <module name="Log" />
+        <module name="Commons" />
+        <module name="Network" />
+        <module name="DataType" />
+        <module name="Spring_Family" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="commons" target="1.8" />
+      <module name="DistributedLock" target="1.8" />
+      <module name="Email" target="1.8" />
+      <module name="PasswordGenerate" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
