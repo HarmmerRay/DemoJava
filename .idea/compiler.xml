@@ -14,9 +14,10 @@
         <module name="BigData_Hadoop" />
         <module name="Log" />
         <module name="Commons" />
+        <module name="JavaBase" />
         <module name="Network" />
         <module name="DataType" />
-        <module name="Spring_Family" />
+        <module name="GrpcServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

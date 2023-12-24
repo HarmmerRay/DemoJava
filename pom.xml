@@ -19,6 +19,7 @@
         <module>DataType</module>
         <module>Network</module>
         <module>Commons</module>
+        <module>JavaBase</module>
     </modules>
 
     <properties>
