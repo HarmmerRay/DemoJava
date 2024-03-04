@@ -7,24 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Databases" />
         <module name="MQ" />
         <module name="ThreadDemo" />
         <module name="Design_Pattern" />
         <module name="BigData_Hadoop" />
         <module name="Log" />
+        <module name="Databases" />
         <module name="Commons" />
         <module name="JavaBase" />
         <module name="Network" />
         <module name="DataType" />
-        <module name="GrpcServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="commons" target="1.8" />
       <module name="DistributedLock" target="1.8" />
       <module name="Email" target="1.8" />
+      <module name="GrpcServer" target="1.8" />
       <module name="PasswordGenerate" target="1.8" />
+      <module name="ServiceOrder" target="1.8" />
+      <module name="ServiceUser" target="1.8" />
+      <module name="Spring_Family" target="1.8" />
+      <module name="SpringCloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
