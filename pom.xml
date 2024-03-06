@@ -16,10 +16,11 @@
 
         <module>Design_Pattern</module>
         <module>Databases</module>
-        <module>DataType</module>
         <module>Network</module>
         <module>Commons</module>
         <module>JavaBase</module>
+        <module>Programmer_Carl</module>
+        <module>Leetcode</module>
     </modules>
 
     <properties>

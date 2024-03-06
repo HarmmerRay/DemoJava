@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/DataType/pom.xml" />
         <option value="$PROJECT_DIR$/DistributedLock/pom.xml" />
         <option value="$PROJECT_DIR$/Email/pom.xml" />
         <option value="$PROJECT_DIR$/PasswordGenerate/pom.xml" />
