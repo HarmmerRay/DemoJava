@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -9,11 +10,18 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Commons/pom.xml" />
         <option value="$PROJECT_DIR$/DataType/pom.xml" />
+        <option value="$PROJECT_DIR$/Design_Pattern/pom.xml" />
         <option value="$PROJECT_DIR$/DistributedLock/pom.xml" />
         <option value="$PROJECT_DIR$/Email/pom.xml" />
+        <option value="$PROJECT_DIR$/Leetcode/pom.xml" />
+        <option value="$PROJECT_DIR$/Log/pom.xml" />
+        <option value="$PROJECT_DIR$/MQ/pom.xml" />
         <option value="$PROJECT_DIR$/PasswordGenerate/pom.xml" />
+        <option value="$PROJECT_DIR$/Programmer_Carl/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_Family/pom.xml" />
+        <option value="$PROJECT_DIR$/ThreadDemo/pom.xml" />
         <option value="$PROJECT_DIR$/commons/pom.xml" />
       </set>
     </option>
