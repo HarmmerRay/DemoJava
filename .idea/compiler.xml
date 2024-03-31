@@ -11,8 +11,8 @@
         <module name="BigData_Hadoop" />
         <module name="Technology" />
         <module name="JavaBase" />
-        <module name="Network" />
         <module name="DataStructureAlgorithm" />
+        <module name="Network" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
