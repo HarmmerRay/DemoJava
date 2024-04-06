@@ -27,6 +27,10 @@ public class MaxSubArray {
         }
         return res;
         // 也可以在上面遍历的同时求出res的最大值
-
     }
+    public int maxSubArray1(int[] nums) {
+        // 线段树 即 分治思想的二叉树结构 [a,b]的左节点[a,(a+b)/2],右节点[(a+b)/2,b]
+        return 0;
+    }
+
 }
