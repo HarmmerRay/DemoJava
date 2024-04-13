@@ -6,28 +6,32 @@ package lcode;
  * @date: 2024/4/12 下午11:15
  */
 public class LongestCommonPrefix {
-        public String longestCommonPrefix(String[] strs) {
+        public static String longestCommonPrefix(String[] strs) {
             if (strs == null || strs.length == 0) {
                 return "";
             }
-            String prefix = strs[0];
-            int count = strs.length;
-            for (int i = 1; i < count; i++) {
-                prefix = longestCommonPrefix(prefix, strs[i]);
-                if (prefix.length() == 0) {
+            String result = strs[0];
+            for(int i = 1;i < strs.length; i++){
+                result = longest(result,strs[i]);
+            }
+            return result;
+        }
+
+        private static String longest(String longest,String now){
+            int length = Math.min(longest.length(), now.length());
+            int pos = 0;
+            for(int i =0; i < length;i++){
+                pos = i;
+                if(longest.charAt(i) != now.charAt(i)){
                     break;
                 }
             }
-            return prefix;
+            return longest.substring(0,pos);
         }
 
-        public String longestCommonPrefix(String str1, String str2) {
-            int length = Math.min(str1.length(), str2.length());
-            int index = 0;
-            while (index < length && str1.charAt(index) == str2.charAt(index)) {
-                index++;
-            }
-            return str1.substring(0, index);
-        }
-
+    public static void main(String[] args) {
+        String []strs = {"flower","flow","flight"};
+        System.out.println(strs[0].charAt(0) == strs[1].charAt(0));
+        System.out.println(longestCommonPrefix(strs));
+    }
 }
