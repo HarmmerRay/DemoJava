@@ -10,7 +10,7 @@ package lcode;
  * @version: 1.0
  */
 
-public class Zconvert {
+public class ZConvert {
         public String convert(String s, int numRows) {
             int n = s.length(), r = numRows;
             if (r == 1 || r >= n) {
