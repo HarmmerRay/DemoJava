@@ -1,5 +1,7 @@
 package lcode;
 
+import structrue.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 
