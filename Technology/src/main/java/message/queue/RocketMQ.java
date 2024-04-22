@@ -1,4 +1,4 @@
-package messageQueue;
+package message.queue;
 
 /**
  * @ClassName MessageQueue.RocketMQ

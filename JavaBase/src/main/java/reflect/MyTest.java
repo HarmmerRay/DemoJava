@@ -1,4 +1,4 @@
-package 类和对象.反射;
+package reflect;
 
 import org.junit.Test;
 import org.springframework.cglib.proxy.Callback;

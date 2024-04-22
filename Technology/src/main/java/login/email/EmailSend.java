@@ -1,4 +1,4 @@
-package email;
+package login.email;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.Properties;
 
 /**
- * @description:
+ * @description:  引入javax.mail包 --> 拷贝从qq邮箱上得到的授权码（以qq邮箱为smtp服务器） --> 根据qq邮箱url、授权码、是否需要用户认证、是否开启TLS加密等配置属性，创建Session对话 --> MineMessage创建信息格式，用session发送信息
  * @author: HammerRay
  * @date: 2023/10/26
  */

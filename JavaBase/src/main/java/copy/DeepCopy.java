@@ -1,9 +1,8 @@
-package 类和对象.拷贝;
+package copy;
 
 import org.apache.commons.lang3.SerializationUtils;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 /**
  * @description:

@@ -1,11 +1,12 @@
-package log; /**
- * @description:
- * @author: HammerRay
- * @date:2023/11/3
- */
+package log;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+/**
+ * @description:
+ * @author: HammerRay
+ * @date: 2023/11/3
+ */
 public class Log4jExample {
     private static final Logger logger = LogManager.getLogger(Log4jExample.class);
 

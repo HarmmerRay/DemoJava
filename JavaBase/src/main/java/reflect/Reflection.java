@@ -1,4 +1,4 @@
-package 类和对象;
+package reflect;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -25,8 +25,8 @@ public class Reflection {
         System.out.println("正射调用过程Reflection id:" + reflection.getId());
 
         //反射 三种：Class.forName("包名.类名")  类名.class  new 类名().getClass
-        //类加载器双亲委派模型 Application ClassLoader --> Extension ClassLoader --> Bootstrap ClassLoader
-        Class clz = Class.forName("类和对象.Reflection");
+        //类加载器双亲委派模型 SelfDefinition ClassLoader --> Application ClassLoader --> Extension ClassLoader --> Bootstrap ClassLoader
+        Class clz = Class.forName("reflect.Reflection");
         Constructor reflectionConstructor = clz.getConstructor();
         Object reflectionObj = reflectionConstructor.newInstance();
 
