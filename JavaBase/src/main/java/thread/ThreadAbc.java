@@ -6,11 +6,11 @@ package thread;
  * @date: 2023/12/26 上午8:47
  */
 
-public class Abc implements Runnable{
+public class ThreadAbc implements Runnable{
     private String name;
     private Object prev;
     private     Object now;
-    public Abc (String name,Object prev,Object now){
+    public ThreadAbc(String name, Object prev, Object now){
         this.name = name;
         this.prev = prev;
         this.now = now;
@@ -38,17 +38,15 @@ public class Abc implements Runnable{
             }
         }
     }
-
-    class ObjectLock{
-
-    }
     public static void main(String[] args) throws InterruptedException {
+        // 查看编译后的class文件可知道： O长度的字节数组只需要3个操作码，new Object需要7个。 所以需要锁的时候用byte[]数组生成
+        byte[] lock = new byte[0];
         Object a = new Object();
         Object b = new Object();
         Object c = new Object();
-        Abc aa = new Abc("A",c,a);
-        Abc bb = new Abc("B",a,b);
-        Abc cc = new Abc("C",b,c);
+        ThreadAbc aa = new ThreadAbc("A",c,a);
+        ThreadAbc bb = new ThreadAbc("B",a,b);
+        ThreadAbc cc = new ThreadAbc("C",b,c);
 
         new Thread(aa).start();
         new Thread(bb).start();
