@@ -14,10 +14,12 @@ public class BioServer implements Runnable{
     public BioServer(Socket socket){
         this.socket = socket;
     }
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         ServerSocket serverSocket = new ServerSocket(6666);
         System.out.println("Bio服务器已经启动，等待连接~~~~");
         while (true){
+            Thread.sleep(5000);
+            System.out.println(6666);
             new Thread(new BioServer(serverSocket.accept())).start();
         }
 
@@ -25,14 +27,16 @@ public class BioServer implements Runnable{
 
     @Override
     public void run() {
-        System.out.print("当前的进程ID是：" + Thread.currentThread().getId());
+        System.out.print("当前的线程ID是：" + Thread.currentThread().getId());
         System.out.println(",我正在处理来自本地，端口：" + socket.getPort() + "的连接请求");
         try{
-            InputStream inputStream = socket.getInputStream();
-            BufferedInputStream
+//            BufferedReader bufferedReader = new BufferedReader(socket.getInputStream(System.in));
+
             Thread.sleep(1000);
             OutputStream outputStream = socket.getOutputStream();
             outputStream.write("谢谢惠顾，欢迎下次光临！".getBytes());
+
+            outputStream.close();
             socket.close();
             System.out.println("处理完毕，连接断开");
         } catch (IOException | InterruptedException e) {

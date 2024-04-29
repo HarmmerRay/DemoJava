@@ -20,13 +20,7 @@ public class Client {
         OutputStream outputStream = socket.getOutputStream();
         outputStream.write(info.getBytes());
 
-        InputStream inputStream = socket.getInputStream();
-        byte []buffer = new byte[1024];
-        int megIndex;
-        while((megIndex = inputStream.read(buffer) )> 0){
-            System.out.println("Receive from server:" + new String(buffer,0,megIndex));
-        }
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~");
-//        socket.close();
+
+        socket.close();
     }
 }
