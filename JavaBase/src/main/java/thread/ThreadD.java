@@ -5,7 +5,10 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 
 /**
- * @description:
+ * @description: 查看线程的三种方法
+ * 一、命令行 1.top -Hp [pid] 2.pstree -p [pid] 3. cat /proc/pid/status | grep Thread
+ * 二、java api
+ * 三、jstack- l [pid]
  * @author: HammerRay
  * @date: 2024/4/29 下午11:35
  */
