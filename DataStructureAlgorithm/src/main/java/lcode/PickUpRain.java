@@ -1,5 +1,7 @@
 package lcode;
 
+import java.util.Stack;
+
 /**
  * @description:
  * @author: HammerRay
@@ -39,7 +41,6 @@ public class PickUpRain {
         if (n == 0){
             return 0;
         }
-        
 
         return result;
     }
