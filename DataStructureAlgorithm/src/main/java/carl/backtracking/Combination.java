@@ -15,6 +15,7 @@ public class Combination {
     List<List<Integer>> resList = new ArrayList<>();
 
     public List<List<Integer>> combine(int n, int k) {
+
         backTracking(n, k, 1);
         return resList;
     }
