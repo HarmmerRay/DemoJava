@@ -16,13 +16,24 @@ public class MyBinaryTree {
     public MyBinaryTree(ArrayList<Integer> binaryTree) {
         this.binaryTree = binaryTree;
     }
+    private int powersOfTwo(int x) {
+        int result = 1;
+        for (int i = 0; i < x; i++) {
+            result *= 2;
+        }
+        return result;
+    }
     public void printTree() {
         int num = 0;
         for(int i = 0,j=0; i < binaryTree.size();j++) {
-            num = 2 ^ j + 1;
+            num = powersOfTwo(j);
             for(int k = 0; k < num; k++) {
-                System.out.print(binaryTree.get(i) + " ");
-                i++;
+                if(i < binaryTree.size()) {
+                    System.out.print(binaryTree.get(i) + " ");
+                    i++;
+                }else {
+                    break;
+                }
             }
             System.out.println();
         }
@@ -32,7 +43,11 @@ public class MyBinaryTree {
     public void delete(int value) {}
 
     public static void main(String[] args) {
-        new ArrayList<>();
-        new MyBinaryTree().printTree();
+        int []arr = {1,2,3,4,5,6,7};
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i : arr) {
+            list.add(i);
+        }
+        new MyBinaryTree(list).printTree();
     }
 }
