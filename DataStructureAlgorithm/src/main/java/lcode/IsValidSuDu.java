@@ -1,7 +1,7 @@
 package lcode;
 
 /**
- * @description:
+ * @description: 是不是有效的数独
  * @author: HammerRay
  * @date: 2024/5/21 下午11:45
  */
