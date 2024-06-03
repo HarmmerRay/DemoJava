@@ -9,6 +9,6 @@ import java.util.concurrent.locks.Lock;
  */
 public class ObviousLock {
     public static void main(String[] args) {
-        Lock
+
     }
 }

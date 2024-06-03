@@ -11,8 +11,9 @@
         <module name="BigData_Hadoop" />
         <module name="Technology" />
         <module name="JavaBase" />
-        <module name="DataStructureAlgorithm" />
         <module name="Network" />
+        <module name="DesignPattern" />
+        <module name="DataStructureAlgorithm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="Leetcode" target="1.8" />
       <module name="Log" target="1.8" />
       <module name="MQ" target="1.8" />
+      <module name="Network (1)" target="1.8" />
       <module name="PasswordGenerate" target="1.8" />
       <module name="Programmer_Carl" target="1.8" />
       <module name="ServiceOrder" target="1.8" />
