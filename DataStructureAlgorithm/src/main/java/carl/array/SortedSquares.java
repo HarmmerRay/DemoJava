@@ -24,6 +24,14 @@ public class SortedSquares {
         }
         return nums;
     }
+    /**
+     * 双指针 O(n)时间复杂 
+     * @param nums:
+     * @return int
+     * @author "HammerRay"
+     * @date 5/15/2024 11:56 PM
+     */
+
     public int[] sortedSquaresB(int[] nums) {
 
         int n = nums.length;
