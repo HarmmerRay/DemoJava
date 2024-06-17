@@ -12,6 +12,8 @@ package org.example.AsimpleFactoryPattern;
 
 public class Test {
     public static void main(String[] args) {
-        ChartFactory.getChart("piechart").display();
+        String type = XmlUtil.getCharType();
+        System.out.println(type);
+        ChartFactory.getChart(type).display();
     }
 }
