@@ -9,6 +9,8 @@ package org.example.BabstractDactoryPattern;
 public class XiaoMiProductFactory implements ProductFactory{
     @Override
     public PhoneProduct createPhoneProduct(String brand) {
+
+
         return null;
     }
 
