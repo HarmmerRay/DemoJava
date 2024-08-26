@@ -26,7 +26,7 @@ public class MyThreadPoolExecutor {
         RejectedExecutionHandler rejectedExecutionHandler = new ThreadPoolExecutor.CallerRunsPolicy();
         // 阻塞队列
         new ArrayBlockingQueue<>(200);
-
+        // newFixedThreadPool  newCachedThreadPool newSingleThreadPoolExecutor newScheduledThreadPool
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(corePoolSize,maxSize,keepAliveTime,unit,
                 new ArrayBlockingQueue<>(200),threadFactory,rejectedExecutionHandler);
 
