@@ -24,7 +24,7 @@ public class MyThreadPoolExecutor {
         ThreadFactory threadFactory = new CustomThreadFactory("demo-");
         // 拒绝策略
         RejectedExecutionHandler rejectedExecutionHandler = new ThreadPoolExecutor.CallerRunsPolicy();
-        // 阻塞队列
+        // 阻塞队列1
         new ArrayBlockingQueue<>(200);
         // newFixedThreadPool  newCachedThreadPool newSingleThreadPoolExecutor newScheduledThreadPool
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(corePoolSize,maxSize,keepAliveTime,unit,
